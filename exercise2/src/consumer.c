@@ -9,8 +9,10 @@ void readData(Buffer* buffer) {
 	printf("[%s] Starting to consume data.\n", getTime());
 
 	while(1) {
-		printf("[%s][%d/%d] Read '%d' from buffer.\n", getTime(), buffer->size, buffer->maxSize, bufferRead(buffer));
-		usleep(getRandom(SPEEDMIN, SPEEDMAX));
+		int s = getRandom(SPEEDMIN, SPEEDMAX);
+
+		printf("[%s][%d/%d] Read '%d' from buffer. %d\n", getTime(), buffer->size, buffer->maxSize, bufferRead(buffer), s);
+		usleep(s);
 	}
 }
 
