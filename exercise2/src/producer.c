@@ -23,7 +23,7 @@ void generateData(Buffer* buffer) {
 		bufferWrite(buffer, i);
 		printf("[%s][%d/%d] Wrote '%d' to buffer.\n", getTime(), buffer->size, buffer->maxSize, i);
 		i++;
-		usleep(SPEEDMIN + rand() % (SPEEDMAX - SPEEDMIN));
+		usleep(getRandom(SPEEDMIN, SPEEDMAX));
 	}
 }
 

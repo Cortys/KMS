@@ -77,3 +77,7 @@ char* getTime() {
 
 	return res;
 }
+
+int getRandom(int min, int max) {
+	return min + rand() % (max - min);
+}

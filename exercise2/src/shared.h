@@ -32,3 +32,4 @@ int sharedBufferAttach(int shmId, Buffer** buffer);
 int sharedBufferInit(int shmId, Buffer** buffer, int maxSize);
 
 char* getTime();
+int getRandom(int min, int max);
