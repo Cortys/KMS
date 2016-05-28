@@ -2,8 +2,8 @@
 
 #include <getopt.h>
 
-#define SPEEDMIN 4000
-#define SPEEDMAX 24000
+#define SPEEDMIN 10000
+#define SPEEDMAX 20000
 
 void readData(Buffer* buffer) {
 	printf("[%s] Starting to consume data.\n", getTime());

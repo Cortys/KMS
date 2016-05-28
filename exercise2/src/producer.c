@@ -2,7 +2,7 @@
 
 #define BUFFERSIZE 10
 #define SPEEDMIN 5000
-#define SPEEDMAX 25000
+#define SPEEDMAX 30000
 
 int createSharedMemory() {
 	key_t key = ftok("producer", 'x');
