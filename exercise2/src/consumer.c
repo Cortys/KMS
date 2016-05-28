@@ -3,16 +3,14 @@
 #include <getopt.h>
 
 #define SPEEDMIN 4000
-#define SPEEDMAX 14000
+#define SPEEDMAX 24000
 
 void readData(Buffer* buffer) {
 	printf("[%s] Starting to consume data.\n", getTime());
 
 	while(1) {
-		int s = getRandom(SPEEDMIN, SPEEDMAX);
-
-		printf("[%s][%d/%d] Read '%d' from buffer. %d\n", getTime(), buffer->size, buffer->maxSize, bufferRead(buffer), s);
-		usleep(s);
+		printf("[%s][%d/%d] Read '%d' from buffer.\n", getTime(), buffer->size, buffer->maxSize, bufferRead(buffer));
+		usleep(getRandom(SPEEDMIN, SPEEDMAX));
 	}
 }
 
