@@ -18,6 +18,7 @@ i=0
 while [[ -z $SHMID && $i -lt 100 ]]; do
 	SHMID=`cat $TMPFILE`
 	i=`expr $i + 1`
+	sleep 0.1s
 done
 
 if [[ -z $SHMID ]]; then
