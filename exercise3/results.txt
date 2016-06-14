@@ -1,0 +1,49 @@
+Test results:
+Run 1: -r 10000 -c 10000 -i r -s n:
+	User time (seconds): 1.55
+	System time (seconds): 0.34
+	Major (requiring I/O) page faults: 2868
+Run 2: -r 10000 -c 10000 -i r -s r:
+	User time (seconds): 2.41
+	System time (seconds): 0.89
+	Major (requiring I/O) page faults: 20408
+Run 3: -r 10000 -c 10000 -i r -s c:
+	User time (seconds): 8.10
+	System time (seconds): 3.02
+	Major (requiring I/O) page faults: 100340
+Run 4: -r 10000 -c 10000 -i c -s n:
+	User time (seconds): 3.84
+	System time (seconds): 0.59
+	Major (requiring I/O) page faults: 9962
+Run 5: -r 10000 -c 10000 -i c -s r:
+	User time (seconds): 6.55
+	System time (seconds): 2.47
+	Major (requiring I/O) page faults: 116025
+Run 6: -r 10000 -c 10000 -i c -s c:
+	User time (seconds): 8.59
+	System time (seconds): 1.42
+	Major (requiring I/O) page faults: 24884
+Run 7: -r 100 -c 1000000 -i r -s n:
+	User time (seconds): 1.48
+	System time (seconds): 0.25
+	Major (requiring I/O) page faults: 101
+Run 8: -r 100 -c 1000000 -i r -s r:
+	User time (seconds): 2.44
+	System time (seconds): 0.81
+	Major (requiring I/O) page faults: 12979
+Run 9: -r 100 -c 1000000 -i r -s c:
+	User time (seconds): 3.33
+	System time (seconds): 0.65
+	Major (requiring I/O) page faults: 25531
+Run 10: -r 100 -c 1000000 -i c -s n:
+	User time (seconds): 2.14
+	System time (seconds): 0.30
+	Major (requiring I/O) page faults: 38
+Run 11: -r 100 -c 1000000 -i c -s r:
+	User time (seconds): 4.44
+	System time (seconds): 2.02
+	Major (requiring I/O) page faults: 94618
+Run 12: -r 100 -c 1000000 -i c -s c:
+	User time (seconds): 3.38
+	System time (seconds): 0.56
+	Major (requiring I/O) page faults: 12882
