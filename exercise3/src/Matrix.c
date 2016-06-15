@@ -3,24 +3,20 @@
 #include "Matrix.h"
 
 int matrixCreate(Matrix** matrix, int rows, int columns) {
-	*matrix = (Matrix*) malloc(sizeof(Matrix));
-
-	if(*matrix == NULL)
+	if((*matrix = (Matrix*) malloc(sizeof(Matrix))) == NULL)
 		return -1;
 
 	(*matrix)->rows = rows;
 	(*matrix)->columns = columns;
-	int** data = (*matrix)->data = malloc(sizeof(int*[rows]));
 
-	if(data == NULL)
+	if(((*matrix)->data = malloc(sizeof(int*[rows]))) == NULL)
 		return -1;
 
-	for(int i = 0; i < rows; i++) {
-		data[i] = malloc(sizeof(int[columns]));
+	int** data = (*matrix)->data;
 
-		if(data[i] == NULL)
+	for(int i = 0; i < rows; i++)
+		if((data[i] = malloc(sizeof(int[columns]))) == NULL)
 			return -1;
-	}
 
 	return 0;
 }

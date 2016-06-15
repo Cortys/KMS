@@ -32,7 +32,7 @@ for size in "${sizes[@]}"; do
 
 			echo "Run $i: $msg" >> $vmstatResults
 
-			$time -v ./aufg5 $size $init $sum 2>&1 1>/dev/null | grep -E "User|System|Major" | tee -a $results
+			$time -v ./aufg5 $size $init $sum 2>&1 1>/dev/null | grep -E "User|System|Elapsed|Major" | tee -a $results
 			echo "End of run $i." >> $vmstatResults
 			i=`expr $i + 1`
 			sleep 2s
