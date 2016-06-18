@@ -1,61 +1,73 @@
 Test results:
 Run 1: -r 10000 -c 10000 -i r -s n:
-	User time (seconds): 1.32
-	System time (seconds): 0.32
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.62
-	Major (requiring I/O) page faults: 2693
+	User time (seconds): 1.27
+	System time (seconds): 0.30
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.14
+	Major (requiring I/O) page faults: 2747
+	Minor (reclaiming a frame) page faults: 123042
 Run 2: -r 10000 -c 10000 -i r -s r:
-	User time (seconds): 2.28
-	System time (seconds): 0.87
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.64
-	Major (requiring I/O) page faults: 20582
+	User time (seconds): 2.02
+	System time (seconds): 0.85
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.88
+	Major (requiring I/O) page faults: 19775
+	Minor (reclaiming a frame) page faults: 205412
 Run 3: -r 10000 -c 10000 -i r -s c:
-	User time (seconds): 8.32
-	System time (seconds): 3.00
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.51
-	Major (requiring I/O) page faults: 100284
+	User time (seconds): 5.86
+	System time (seconds): 2.00
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:09.29
+	Major (requiring I/O) page faults: 100301
+	Minor (reclaiming a frame) page faults: 125666
 Run 4: -r 10000 -c 10000 -i c -s n:
-	User time (seconds): 4.10
-	System time (seconds): 0.60
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.71
-	Major (requiring I/O) page faults: 10403
+	User time (seconds): 3.19
+	System time (seconds): 0.42
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.97
+	Major (requiring I/O) page faults: 10409
+	Minor (reclaiming a frame) page faults: 104880
 Run 5: -r 10000 -c 10000 -i c -s r:
-	User time (seconds): 6.18
-	System time (seconds): 2.64
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:21.94
-	Major (requiring I/O) page faults: 116417
+	User time (seconds): 5.35
+	System time (seconds): 1.90
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:14.35
+	Major (requiring I/O) page faults: 116731
+	Minor (reclaiming a frame) page faults: 126159
 Run 6: -r 10000 -c 10000 -i c -s c:
-	User time (seconds): 8.47
-	System time (seconds): 1.64
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.35
-	Major (requiring I/O) page faults: 24876
+	User time (seconds): 6.28
+	System time (seconds): 1.19
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.90
+	Major (requiring I/O) page faults: 26373
+	Minor (reclaiming a frame) page faults: 226961
 Run 7: -r 100 -c 1000000 -i r -s n:
-	User time (seconds): 1.70
-	System time (seconds): 0.28
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.06
-	Major (requiring I/O) page faults: 91
+	User time (seconds): 1.32
+	System time (seconds): 0.25
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.43
+	Major (requiring I/O) page faults: 94
+	Minor (reclaiming a frame) page faults: 97874
 Run 8: -r 100 -c 1000000 -i r -s r:
-	User time (seconds): 2.34
-	System time (seconds): 0.82
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.56
-	Major (requiring I/O) page faults: 13151
+	User time (seconds): 2.23
+	System time (seconds): 0.58
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.97
+	Major (requiring I/O) page faults: 13221
+	Minor (reclaiming a frame) page faults: 182473
 Run 9: -r 100 -c 1000000 -i r -s c:
-	User time (seconds): 2.89
-	System time (seconds): 0.69
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.84
-	Major (requiring I/O) page faults: 24075
+	User time (seconds): 2.59
+	System time (seconds): 0.66
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.96
+	Major (requiring I/O) page faults: 22735
+	Minor (reclaiming a frame) page faults: 172223
 Run 10: -r 100 -c 1000000 -i c -s n:
-	User time (seconds): 1.96
-	System time (seconds): 0.22
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.43
-	Major (requiring I/O) page faults: 50
+	User time (seconds): 2.01
+	System time (seconds): 0.20
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.23
+	Major (requiring I/O) page faults: 41
+	Minor (reclaiming a frame) page faults: 97857
 Run 11: -r 100 -c 1000000 -i c -s r:
-	User time (seconds): 3.89
-	System time (seconds): 3.52
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.60
-	Major (requiring I/O) page faults: 96025
+	User time (seconds): 3.98
+	System time (seconds): 1.52
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:54.86
+	Major (requiring I/O) page faults: 96604
+	Minor (reclaiming a frame) page faults: 98210
 Run 12: -r 100 -c 1000000 -i c -s c:
-	User time (seconds): 3.31
-	System time (seconds): 0.64
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:17.48
-	Major (requiring I/O) page faults: 13569
+	User time (seconds): 3.11
+	System time (seconds): 0.46
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.47
+	Major (requiring I/O) page faults: 12685
+	Minor (reclaiming a frame) page faults: 182931
